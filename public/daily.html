@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light">
+  <title>AI 日报 · SmartKey</title>
+  <link rel="stylesheet" href="./monitor.css"><link rel="stylesheet" href="./daily.css?v=20261011-live"><script type="module" src="./daily.js?v=20261011-live"></script>
+</head>
+<body>
+  <aside class="sidebar" aria-label="会员导航">
+    <a class="brand" href="https://shop.smartkey.fun/membership.html"><img src="./smartkey-cat-loop.gif" alt="" width="48" height="40"><span>SmartKey<small>会员服务</small></span></a>
+    <div class="nav-caption">探索与资讯</div>
+    <nav><a class="nav-item" href="https://shop.smartkey.fun/membership.html#monitor"><span aria-hidden="true">◷</span>Codex 重置监控</a><a class="nav-item active" href="/daily" aria-current="page"><span aria-hidden="true">▤</span>AI 日报</a></nav>
+    <div class="sidebar-note"><span class="small-label">DAILY INSPIRATION</span><p>读几条新消息，<br>带走一个新想法。</p><div class="little-orbit" aria-hidden="true"><i></i><b>✳</b></div></div>
+    <a class="back-link" href="https://shop.smartkey.fun/membership.html">← 返回会员中心</a>
+  </aside>
+  <main class="main daily-main">
+    <header class="page-header"><div class="today"><span id="today-label">北京时间</span><strong id="today-date">—</strong><span id="today-weekday">—</span></div><div><div class="small-label">AI / DAILY READ</div><h1>AI 日报<span class="title-dot">.</span></h1><p>精选值得关注的 AI 动态，读懂每一天的变化。</p></div>
+    <section class="daily-hot" aria-labelledby="hot-heading">
+      <div class="daily-hot-heading"><h2 id="hot-heading">当前热点</h2><span id="hot-freshness">正在同步热度</span></div>
+      <ol id="hot-items" class="daily-hot-items" aria-live="polite"><li class="daily-hot-empty">正在读取热点…</li></ol>
+    </section>
+    <section class="daily-calendar calendar-card" aria-label="日报日历">
+      <div class="month-controls"><strong id="daily-month-label">—</strong><div><button id="daily-prev-month" aria-label="上个月">‹</button><button id="daily-current-month">本月</button><button id="daily-next-month" aria-label="下个月">›</button></div></div>
+      <div class="weekdays" aria-hidden="true"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span></div>
+      <div class="calendar-grid" id="daily-calendar-grid" aria-label="选择日期查看每日精选"></div>
+      <div class="daily-calendar-footer"><span>选择日期查看</span><button id="daily-all-dates" aria-pressed="true">全部日期</button></div>
+    </section>
+    </header>
+    <div id="daily-message" class="feed-message" role="status" hidden></div>
+
+    <section class="daily-toolbar" aria-label="筛选精选资讯">
+      <div class="daily-categories" role="group" aria-label="资讯分类"><button data-category="all" aria-pressed="true">全部</button><button data-category="ai-models" aria-pressed="false">模型</button><button data-category="ai-products" aria-pressed="false">产品</button><button data-category="industry" aria-pressed="false">行业</button><button data-category="paper" aria-pressed="false">论文</button><button data-category="tip" aria-pressed="false">教程</button><button data-category="opinion" aria-pressed="false">观点</button></div>
+      <label class="daily-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><input id="daily-search" type="search" placeholder="搜索标题与摘要" aria-label="搜索精选资讯"></label>
+    </section>
+    <div class="daily-meta"><h2>每日精选</h2><span id="daily-count">正在读取精选内容…</span></div>
+    <section id="daily-content" class="daily-content" aria-label="每日精选内容" aria-live="polite"><div class="daily-loading">正在整理值得关注的消息…</div></section>
+    <footer class="page-footer"><div>近 7 日精选 · 按北京时间收录日期排列 · 已采集历史保留 180 天</div><span id="daily-freshness">正在连接数据源</span></footer>
+  </main>
+</body>
+</html>
